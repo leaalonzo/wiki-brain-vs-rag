@@ -49,7 +49,7 @@ Full write-up: [Substack series](https://substack.com) *(link to be added after 
 raw/*.md  (paper text + YAML frontmatter)
    │
    ├─► rag/ingest.py  ─────────────► ChromaDB  ──► rag/qa.py
-   │     semantic chunking                           top-k retrieval + gpt-4o
+   │     fixed chunking                              top-k retrieval + gpt-4o
    │
    └─► wiki_compiler/compile.py ──► wiki/      ──► wiki_compiler/query.py
          Phase 2a: summarize                         LLM selects articles + gpt-4o

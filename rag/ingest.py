@@ -1,5 +1,5 @@
 """
-Phase 3 RAG — Ingest: semantic chunking + OpenAI embeddings → ChromaDB.
+Phase 3 RAG — Ingest: fixed chunking + OpenAI embeddings → ChromaDB.
 
 Chunking strategy:
   1. Split on double newlines (paragraph boundaries)
@@ -49,7 +49,7 @@ def _split_sentences(text: str) -> list[str]:
     return [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
 
 
-def semantic_chunk(text: str) -> list[tuple[str, int, int]]:
+def fixed_chunk(text: str) -> list[tuple[str, int, int]]:
     """
     Return list of (chunk_text, char_start, char_end).
 
@@ -143,7 +143,7 @@ def ingest_file(
     force: bool = False,
 ) -> int:
     text = path.read_text(encoding="utf-8")
-    chunks = semantic_chunk(text)
+    chunks = fixed_chunk(text)
     if not chunks:
         return 0
 
@@ -184,7 +184,7 @@ def ingest_file(
 @click.option("--file", "target_file", default=None, help="Ingest a single file.")
 @click.option("--force", is_flag=True, default=False, help="Re-embed even if already indexed.")
 def main(target_file: str | None, force: bool) -> None:
-    """Semantic chunk and embed raw/ .md files into ChromaDB."""
+    """Fixed chunk and embed raw/ .md files into ChromaDB."""
     Path(CHROMA_PERSIST_DIR).mkdir(parents=True, exist_ok=True)
     chroma = chromadb.PersistentClient(path=CHROMA_PERSIST_DIR)
     openai_client = OpenAI()
