@@ -43,6 +43,18 @@ Full write-up: [Substack series](https://substack.com) *(link to be added after 
 
 ---
 
+## Key takeaway
+
+Precomputed structure beats simple retrieval — but the comparison has limits.
+
+The wiki won on questions that required connecting ideas across papers (Q2: CoT failure modes, Q7: speculative decoding, Q9: IRCoT). RAG won on straightforward factual questions where a single relevant chunk was sufficient. Q7 exposed RAG's core weakness: if retrieval fails, the answer fails completely — RAG returned four irrelevant documents and scored 1/5 across all categories. The wiki had no such single point of failure because knowledge was already compiled.
+
+The honest caveat is that **RAG's losses are partly self-inflicted**. This implementation uses fixed chunking, cosine similarity only, and no reranking. A stronger RAG stack (hybrid sparse+dense search, reranking, semantic chunking) would likely close the gap or flip some results.
+
+The finding is therefore scoped: **for a simple RAG baseline, a precompiled wiki is more robust and higher-variance**. This is not a comparison between wiki and RAG in general — it is a comparison between a precompiled wiki and the simplest reasonable RAG implementation.
+
+---
+
 ## What this project is actually comparing
 
 This project compares two different approaches to organizing knowledge from research papers:
