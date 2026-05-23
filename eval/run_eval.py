@@ -257,6 +257,17 @@ def generate_summary(all_results: list[dict], systems: set[str]) -> str:
             f"- {reasoning}\n"
         )
 
+    per_question_rows = "".join(
+        "| {} | {}... | {} | {}/20 | {}/20 |\n".format(
+            r["id"],
+            r["question"][:55],
+            r["judge"].get("winner", "—") if "judge" in r else "—",
+            total_score(r, "systemA") if "judge" in r else "—",
+            total_score(r, "systemB") if "judge" in r else "—",
+        )
+        for r in all_results
+    )
+
     return f"""# Eval Summary
 
 > Generated: {now}  |  Questions evaluated: {n}
@@ -288,14 +299,7 @@ def generate_summary(all_results: list[dict], systems: set[str]) -> str:
 
 | # | Question | Winner | Wiki score | RAG score |
 |---|---|---|---|---|
-{"".join(
-    f"| {r['id']} | {r['question'][:55]}... | "
-    f"{r['judge'].get('winner','—') if 'judge' in r else '—'} | "
-    f"{total_score(r,'systemA') if 'judge' in r else '—'}/20 | "
-    f"{total_score(r,'systemB') if 'judge' in r else '—'}/20 |\n"
-    for r in all_results
-)}
-"""
+{per_question_rows}"""
 
 
 # ── CLI ───────────────────────────────────────────────────────────────────────
