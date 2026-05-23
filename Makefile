@@ -14,9 +14,6 @@ help:
 	@echo "  run-wiki-qa      Interactive wiki Q&A (wiki/ as context)"
 	@echo "  run-eval         Run both systems on eval/questions.md"
 	@echo "  search Q=...     Naive wiki search  (e.g. make search Q='attention')"
-	@echo "  generate-posts   Generate all 4 Substack drafts"
-	@echo "  generate-linkedin Generate all 4 LinkedIn drafts"
-	@echo "  generate-linkedin-post N=2  Generate one LinkedIn post"
 
 install:
 	pip install -r requirements.txt

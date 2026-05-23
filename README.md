@@ -198,7 +198,6 @@ wiki-brain-vs-rag/
 │   ├── questions.md      # 10 benchmark questions
 │   └── results/          # Per-question JSON + summary.md
 ├── tools/                # fetch_papers, search, blog_generator
-├── content/drafts/       # Generated Substack and LinkedIn posts
 ├── obsidian/             # Preconfigured Obsidian vault (open in Obsidian)
 ├── Makefile
 └── .env.example
