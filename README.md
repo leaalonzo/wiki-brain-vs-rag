@@ -2,7 +2,7 @@
 
 **wiki-brain-vs-rag** turns a folder of research papers into a queryable knowledge base in two complementary ways: a compiled wiki of concept articles (synthesized by an LLM) and a standard RAG pipeline backed by ChromaDB. A built-in eval harness runs both systems head-to-head on the same questions, with GPT-4o as judge.
 
-> Motivation: Andrej Karpathy observed that reading papers accumulates a knowledge debt — you can't recall or connect what you've read. This project tests whether an LLM can compile that debt into a structured, searchable wiki, and whether that wiki beats a RAG index for Q&A.
+> Motivation: Andrej Karpathy observed that reading papers accumulates a knowledge debt — you can't recall or connect what you've read. This project tests whether an LLM can compile that debt into a structured, searchable wiki, and how that wiki compares to a baseline vector RAG pipeline for Q&A.
 
 ---
 
@@ -40,6 +40,21 @@ Win/loss: Wiki 3 — RAG 5 — Ties 2 (out of 10 questions)
 Cost per 10 queries: Wiki $0.45 — RAG $0.31  
 One-time compilation cost: ~$0.65  
 Full write-up: [Substack series](https://substack.com) *(link to be added after publication)*
+
+---
+
+## What this project is actually comparing
+
+This project compares two different approaches to organizing knowledge from research papers:
+
+- **Wiki pipeline:** precomputes synthesis during ingestion by generating summaries, concept articles, and backlinks across the corpus.
+- **RAG pipeline:** retrieves relevant chunks dynamically at query time and synthesizes answers from retrieved context.
+
+In other words, this benchmark compares precomputed semantic structure versus query-time retrieval.
+
+The RAG implementation intentionally uses a simple baseline retrieval stack: dense vector retrieval over fixed-size chunks without reranking, hybrid sparse+dense search, or graph traversal.
+
+> Evaluation note: GPT-4o served as a single automated evaluator using a fixed rubric. This benchmark is intended as an exploratory comparison for rapid iteration, not a definitive human evaluation.
 
 ---
 
@@ -242,3 +257,4 @@ ln -sf "$(pwd)/wiki" obsidian/wiki
 - OpenAI API key (required)
 - Semantic Scholar API key (optional; increases fetch rate limit from ~1 req/s to 10 req/s)
 - ~500 MB disk space for a 36-paper corpus with ChromaDB index
+
