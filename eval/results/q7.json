@@ -1,0 +1,52 @@
+{
+  "id": "7",
+  "question": "What is speculative decoding and how does it accelerate LLM inference without changing outputs?",
+  "reference": "Speculative decoding uses a small draft model to generate several candidate tokens quickly, then verifies them in parallel with the large target model. Because the target model can score a batch of tokens in one forward pass (similar cost to scoring one), accepted tokens are generated faster. Rejected tokens fall back to the target model's distribution, so the output distribution is mathematically identical to autoregressive decoding from the large model alone.",
+  "source": "fast_inference_from_transformers_via_speculative_decoding.md",
+  "timestamp": "2026-05-22T18:01:03.489538",
+  "wiki": {
+    "answer": "Speculative decoding is an algorithm designed to accelerate inference in large autoregressive models, such as Transformers, by enabling the parallel computation of multiple tokens. This method speeds up the inference process without altering the output distribution of the model. According to the article [[speculative_decoding]], speculative decoding can be applied to existing models without necessitating retraining or changes to the model architecture.\n\nThe acceleration is achieved by leveraging easier subtasks within complex language-modeling tasks, using more efficient models for approximation. The algorithm employs speculative execution and a novel sampling method known as speculative sampling to maintain the original output distribution while increasing the speed of inference. This approach has been demonstrated on models like T5-XXL, achieving a 2X-3X acceleration compared to standard implementations, as noted in the summary of the paper \"Fast Inference from Transformers via Speculative Decoding\" ([[fast_inference_from_transformers_via_speculative_decoding]]).",
+    "articles_used": [
+      "wiki/concepts/speculative_decoding.md",
+      "wiki/concepts/speculative_sampling.md",
+      "wiki/concepts/autoregressive_model.md",
+      "wiki/summaries/fast_inference_from_transformers_via_speculative_decoding.md"
+    ],
+    "token_count": 9244,
+    "latency_ms": 13759
+  },
+  "rag": {
+    "answer": "The context provided does not include information on speculative decoding or how it accelerates LLM inference without changing outputs. If you have more specific documents or context related to speculative decoding, please provide them for a more accurate response.",
+    "sources_used": [
+      "awq_activation-aware_weight_quantization_for_llm_compression_and_acceleration.md",
+      "plan-and-solve_prompting_improving_zero-shot_chain-of-thought_reasoning_by_large.md",
+      "spqr_a_sparse-quantized_representation_for_near-lossless_llm_weight_compression.md",
+      "the_program_testing_ability_of_large_language_models_for_code.md"
+    ],
+    "top_scores": [
+      0.4748,
+      0.4587,
+      0.4516,
+      0.4414,
+      0.4406
+    ],
+    "token_count": 6849,
+    "latency_ms": 12128
+  },
+  "judge": {
+    "systemA": {
+      "accuracy": 5,
+      "completeness": 5,
+      "citation": 3,
+      "synthesis": 4
+    },
+    "systemB": {
+      "accuracy": 1,
+      "completeness": 1,
+      "citation": 1,
+      "synthesis": 1
+    },
+    "winner": "A",
+    "reasoning": "System A provides a detailed and accurate explanation of speculative decoding, while System B fails to address the question."
+  }
+}

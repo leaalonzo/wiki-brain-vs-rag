@@ -1,0 +1,50 @@
+{
+  "id": "8",
+  "question": "What problem does FreshLLMs address and what is the FreshPrompt approach?",
+  "reference": "FreshLLMs addresses the knowledge staleness problem: LLMs trained on static snapshots give outdated answers to time-sensitive questions. FreshPrompt retrieves up-to-date search engine results for a query and injects them into the prompt context before the LLM answers. This allows a frozen LLM to answer questions about recent events without retraining, at the cost of retrieval latency.",
+  "source": "freshllms_refreshing_large_language_models_with_search_engine_augmentation.md",
+  "timestamp": "2026-05-22T18:01:31.344057",
+  "wiki": {
+    "answer": "The study \"FreshLLMs: Refreshing Large Language Models with Search Engine Augmentation\" addresses the problem of large language models (LLMs) struggling to adapt to dynamic world knowledge, particularly when dealing with fast-changing information and false premises. Traditional LLMs often have difficulty providing accurate responses to questions that require up-to-date information or involve debunking false premises.\n\nThe FreshPrompt approach, introduced in this study, is a method designed to enhance the performance of LLMs by incorporating real-time information from search engines into the model's prompts. This method uses a few-shot prompting technique to integrate search engine data, significantly improving the factual accuracy of LLM-generated text. FreshPrompt has shown superior results compared to other search-augmented methods and commercial systems like Perplexity.AI, with notable improvements in accuracy for models like GPT-4. According to the study, FreshPrompt yields improvements of 32.6% and 49.0% accuracy over the vanilla GPT-4 on the FreshQA benchmark under RELAXED and STRICT evaluation modes, respectively ([[FreshPrompt]], [[FreshQA]], [[Search Engine Augmentation]]).",
+    "articles_used": [
+      "wiki/concepts/freshprompt.md",
+      "wiki/concepts/freshqa.md",
+      "wiki/concepts/search_engine_augmentation.md",
+      "wiki/summaries/freshllms_refreshing_large_language_models_with_search_engine_augmentation.md"
+    ],
+    "token_count": 9612,
+    "latency_ms": 21357
+  },
+  "rag": {
+    "answer": "FreshLLMs addresses the problem of large language models (LLMs) being trained once and not updated, which results in their inability to adapt dynamically to the ever-changing world. This limitation affects their performance, particularly on questions that require current world knowledge or involve false premises that need debunking. The study highlights that all models, regardless of size, struggle with questions involving fast-changing knowledge and false premises, indicating significant room for improvement in these areas [1].\n\nThe FreshPrompt approach is a simple few-shot prompting method designed to enhance the performance of LLMs on the FreshQA benchmark. It does so by incorporating relevant and up-to-date information retrieved from a search engine into the prompt. FreshPrompt outperforms other search engine-augmented prompting methods and commercial systems by effectively using the number and order of retrieved evidences to influence the correctness of LLM-generated answers. Additionally, instructing the LLM to generate concise and direct answers helps reduce hallucination compared to more verbose responses [1].",
+    "sources_used": [
+      "freshllms_refreshing_large_language_models_with_search_engine_augmentation.md",
+      "plan-and-solve_prompting_improving_zero-shot_chain-of-thought_reasoning_by_large.md"
+    ],
+    "top_scores": [
+      0.5766,
+      0.5753,
+      0.5752,
+      0.5606,
+      0.5576
+    ],
+    "token_count": 8285,
+    "latency_ms": 13403
+  },
+  "judge": {
+    "systemA": {
+      "accuracy": 5,
+      "completeness": 5,
+      "citation": 4,
+      "synthesis": 5
+    },
+    "systemB": {
+      "accuracy": 5,
+      "completeness": 5,
+      "citation": 4,
+      "synthesis": 5
+    },
+    "winner": "tie",
+    "reasoning": "Both systems provide accurate, complete, and well-synthesized answers with similar citation quality."
+  }
+}

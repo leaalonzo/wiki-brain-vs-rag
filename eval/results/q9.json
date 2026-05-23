@@ -1,0 +1,51 @@
+{
+  "id": "9",
+  "question": "What is IRCoT and how does it combine retrieval with chain-of-thought reasoning?",
+  "reference": "Interleaved Retrieval with Chain-of-Thought (IRCoT) interleaves retrieval steps with CoT reasoning steps: after each reasoning sentence, the system retrieves new supporting passages, which in turn guide the next reasoning step. This iterative loop outperforms retrieving all passages upfront, because later reasoning steps can identify information gaps not anticipated by the original query.",
+  "source": "interleaving_retrieval_with_chain-of-thought_reasoning_for_knowledge-intensive_m.md",
+  "timestamp": "2026-05-22T18:02:07.254140",
+  "wiki": {
+    "answer": "IRCoT, or Interleaving Retrieval with Chain-of-Thought, is an advanced method designed to enhance the performance of large language models (LLMs) in multi-step question answering (QA). According to the article [[Concept: ircot]], IRCoT improves retrieval accuracy and factual correctness by interleaving retrieval steps with chain-of-thought (CoT) reasoning. This approach addresses the limitations of traditional one-step retrieval methods by integrating retrieval with CoT reasoning, which allows for more relevant information retrieval and improved reasoning accuracy.\n\nThe method significantly enhances retrieval accuracy (up to 21 points) and downstream QA performance (up to 15 points) across multiple datasets such as HotpotQA, 2WikiMultihopQA, MuSiQue, and IIRC. It is effective in both in-distribution and out-of-distribution settings and performs well with smaller models like Flan-T5-large without requiring additional training. Additionally, IRCoT reduces model hallucination, leading to more factually accurate CoT reasoning, and outperforms traditional one-step question-based retrieval, especially in complex multi-step reasoning tasks.\n\nIn summary, IRCoT combines retrieval with chain-of-thought reasoning by alternating between retrieval and reasoning steps, allowing each to inform and refine the other, thereby enhancing both the accuracy of information retrieval and the coherence of reasoning.",
+    "articles_used": [
+      "wiki/concepts/ircot.md",
+      "wiki/concepts/retrieval-guided_reasoning.md",
+      "wiki/concepts/chain-of-thought_(cot)_reasoning.md",
+      "wiki/concepts/multi-step_question_answering.md",
+      "wiki/summaries/interleaving_retrieval_with_chain-of-thought_reasoning_for_knowledge-intensive_m.md"
+    ],
+    "token_count": 10085,
+    "latency_ms": 20453
+  },
+  "rag": {
+    "answer": "IRCoT, or Interleaved Retrieval guided by Chain-of-Thought, is a novel approach designed to enhance multi-step question answering (QA) by integrating retrieval with chain-of-thought (CoT) reasoning. This method addresses the limitations of traditional one-step retrieval methods, which often fall short in complex, multi-step reasoning tasks where the necessary knowledge might not be readily available or up-to-date within a language model's parameters.\n\nIRCoT operates by interleaving retrieval steps with CoT reasoning. This means that instead of retrieving information in a single step based solely on the initial question, IRCoT alternates between generating reasoning steps and retrieving additional information. Each reasoning step informs what should be retrieved next, and each retrieval step provides new information that can refine or extend the reasoning process. This iterative process continues until a satisfactory answer is reached or a predefined number of steps is completed.\n\nThe effectiveness of IRCoT is demonstrated by its ability to substantially improve retrieval and QA performance across several datasets, outperforming traditional methods by significant margins. It reduces factual errors in generated CoTs and is effective even with smaller models like Flan-T5, without requiring additional training. Furthermore, IRCoT has shown to be robust in out-of-distribution settings, maintaining its performance when applied to datasets different from those it was initially demonstrated on [1][2][3][4][5].\n\nIn summary, IRCoT enhances the retrieval process by using CoT reasoning to guide what information should be retrieved next, and vice versa, thereby improving the overall accuracy and reliability of multi-step QA tasks.\n\nSources:\n[1] interleaving_retrieval_with_chain-of-thought_reasoning_for_knowledge-intensive_m.md\n[2] interleaving_retrieval_with_chain-of-thought_reasoning_for_knowledge-intensive_m.md\n[3] interleaving_retrieval_with_chain-of-thought_reasoning_for_knowledge-intensive_m.md\n[4] interleaving_retrieval_with_chain-of-thought_reasoning_for_knowledge-intensive_m.md\n[5] interleaving_retrieval_with_chain-of-thought_reasoning_for_knowledge-intensive_m.md",
+    "sources_used": [
+      "interleaving_retrieval_with_chain-of-thought_reasoning_for_knowledge-intensive_m.md",
+      "towards_understanding_chain-of-thought_prompting_an_empirical_study_of_what_matt.md"
+    ],
+    "top_scores": [
+      0.7026,
+      0.6974,
+      0.6728,
+      0.6602,
+      0.6335
+    ],
+    "token_count": 8233,
+    "latency_ms": 16410
+  },
+  "judge": {
+    "systemA": {
+      "accuracy": 5,
+      "completeness": 5,
+      "citation": 3,
+      "synthesis": 5
+    },
+    "systemB": {
+      "accuracy": 5,
+      "completeness": 5,
+      "citation": 2,
+      "synthesis": 5
+    },
+    "winner": "A",
+    "reasoning": "System A provides a more detailed explanation with specific performance metrics, enhancing its completeness and synthesis, despite both systems having similar accuracy."
+  }
+}

@@ -1,0 +1,11 @@
+openai==1.57.0
+ruff>=0.4.0
+chromadb==0.6.3
+click==8.1.8
+python-dotenv==1.0.1
+tiktoken==0.8.0
+rich==13.9.4
+PyMuPDF==1.25.2
+pymupdf4llm==0.0.17
+requests==2.32.3
+PyYAML==6.0.2

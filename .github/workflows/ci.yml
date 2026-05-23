@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruff
+          pip install -r requirements.txt
+
+      - name: Lint with ruff
+        run: ruff check .
+
+      - name: Check imports (no API calls)
+        env:
+          OPENAI_API_KEY: sk-test-placeholder
+        run: |
+          python -c "from rag.ingest import semantic_chunk; print('rag.ingest OK')"
+          python -c "from rag.retrieval import retrieve; print('rag.retrieval OK')"
+          python -c "from rag.qa import answer; print('rag.qa OK')"
+          python -c "from wiki_compiler.compile import concept_slug; print('wiki_compiler.compile OK')"
+          python -c "from wiki_compiler.query import answer; print('wiki_compiler.query OK')"
+          python -c "from eval.run_eval import parse_questions; print('eval.run_eval OK')"
+          python -c "from tools.search import main; print('tools.search OK')"
+
+      - name: Verify required structure
+        run: |
+          python - <<'EOF'
+          from pathlib import Path
+          required = [
+              "Makefile",
+              "requirements.txt",
+              ".env.example",
+              "eval/questions.md",
+              "eval/results/summary.md",
+              "tools/queries.yaml",
+              "raw/_manifest.json",
+              "sample_corpus/attention_is_all_you_need.md",
+              "sample_corpus/chain_of_thought_prompting.md",
+              "sample_corpus/dense_passage_retrieval.md",
+              "sample_corpus/rag_for_knowledge_intensive_nlp.md",
+              "sample_corpus/llama_open_foundation_models.md",
+          ]
+          missing = [p for p in required if not Path(p).exists()]
+          if missing:
+              print("MISSING FILES:")
+              for m in missing:
+                  print(f"  {m}")
+              raise SystemExit(1)
+          print(f"Structure OK — {len(required)} required files present")
+          EOF
+
+      - name: Check .env is gitignored
+        run: |
+          if git ls-files --error-unmatch .env 2>/dev/null; then
+            echo "ERROR: .env is tracked by git — remove it and add to .gitignore"
+            exit 1
+          fi
+          echo ".env is not tracked (correct)"

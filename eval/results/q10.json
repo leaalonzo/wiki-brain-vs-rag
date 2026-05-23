@@ -1,0 +1,58 @@
+{
+  "id": "10",
+  "question": "How does RocketQA improve dense passage retrieval for open-domain question answering?",
+  "reference": "RocketQA introduces three training strategies: cross-batch negatives (using all passages in a training batch as negatives without extra memory), denoised hard negative sampling (using a cross-encoder to filter false negatives from retrieved hard negatives), and data augmentation with unlabeled passages scored by the cross-encoder. Together these improve the dual-encoder's ability to distinguish relevant from irrelevant passages.",
+  "source": "rocketqa_an_optimized_training_approach_to_dense_passage_retrieval_for_open-doma.md",
+  "timestamp": "2026-05-22T18:02:45.553996",
+  "wiki": {
+    "answer": "According to the article on [[rocketqa]], RocketQA improves dense passage retrieval for open-domain question answering by introducing several innovative techniques that enhance the training of dual-encoder architectures. These techniques address key challenges such as discrepancies between training and inference, the presence of unlabeled positives, and limited training data. The main strategies employed by RocketQA include:\n\n1. **Cross-Batch Negatives**: This technique increases the number of available negative samples during training by leveraging examples from multiple batches, rather than limiting to negatives within a single batch. This helps the model better distinguish between relevant and irrelevant passages.\n\n2. **Denoised Hard Negatives**: RocketQA removes false negatives from top-ranked retrievals, which enhances the reliability of training by ensuring that only true negatives are used to refine the model.\n\n3. **Data Augmentation**: Large-scale unsupervised data is labeled by a cross-encoder, which is then used to augment the training data. This helps in overcoming the limitations of limited labeled data.\n\nThese strategies have demonstrated significant performance improvements over state-of-the-art models on datasets such as MS-MARCO and Natural Questions. RocketQA's approach not only enhances dense passage retrieval but also improves the performance of end-to-end question answering systems. Notably, manual examination of top-retrieved passages in the MSMARCO dataset revealed that 70% of them are actually positives, highlighting the effectiveness of RocketQA's strategies.",
+    "articles_used": [
+      "wiki/concepts/rocketqa.md",
+      "wiki/concepts/dense_passage_retrieval.md",
+      "wiki/concepts/dense_passage_retriever.md",
+      "wiki/concepts/dual-encoder.md",
+      "wiki/concepts/cross-batch_negatives.md",
+      "wiki/concepts/ernie-search.md",
+      "wiki/concepts/xmoco.md",
+      "wiki/concepts/interaction_distillation.md",
+      "wiki/summaries/rocketqa_an_optimized_training_approach_to_dense_passage_retrieval_for_open-doma.md",
+      "wiki/summaries/ernie-search_bridging_cross-encoder_with_dual-encoder_via_self_on-the-fly_distil.md",
+      "wiki/summaries/hierarchical_representations_in_dense_passage_retrieval_for_question-answering.md",
+      "wiki/summaries/xmoco_cross_momentum_contrastive_learning_for_open-domain_question_answering.md"
+    ],
+    "token_count": 12389,
+    "latency_ms": 30787
+  },
+  "rag": {
+    "answer": "RocketQA improves dense passage retrieval for open-domain question answering by addressing several challenges associated with training dual-encoder architectures. The approach introduces three key strategies:\n\n1. **Cross-Batch Negatives**: This strategy increases the number of available negative samples for each question during training by using negatives from other batches. This helps to alleviate the discrepancy between training and inference phases, where the model needs to identify relevant passages from a much larger pool during inference than during training.\n\n2. **Denoised Hard Negatives**: RocketQA removes false negatives from the top-ranked results retrieved by a retriever, thereby deriving more reliable hard negatives. This is crucial because false negatives can mislead the training process, reducing the effectiveness of the model.\n\n3. **Data Augmentation**: The approach leverages large-scale unsupervised data labeled by a more capable cross-encoder to generate high-quality pseudo labels for unlabeled data. This augmented data is then used to train the dual-encoder retriever, improving its performance without the need for extensive manually-labeled datasets.\n\nThese strategies collectively enhance the model's ability to retrieve relevant passages, significantly outperforming previous state-of-the-art models on datasets like MSMARCO and Natural Questions. The improvements in passage retrieval also lead to better performance in end-to-end question answering systems [1][2][4].\n\nSources:\n- [1] rocketqa_an_optimized_training_approach_to_dense_passage_retrieval_for_open-doma.md\n- [2] rocketqa_an_optimized_training_approach_to_dense_passage_retrieval_for_open-doma.md\n- [4] rocketqa_an_optimized_training_approach_to_dense_passage_retrieval_for_open-doma.md",
+    "sources_used": [
+      "an_encoder_attribution_analysis_for_dense_passage_retriever_in_open-domain_quest.md",
+      "rocketqa_an_optimized_training_approach_to_dense_passage_retrieval_for_open-doma.md"
+    ],
+    "top_scores": [
+      0.796,
+      0.7821,
+      0.7696,
+      0.7449,
+      0.7284
+    ],
+    "token_count": 8301,
+    "latency_ms": 12288
+  },
+  "judge": {
+    "systemA": {
+      "accuracy": 5,
+      "completeness": 5,
+      "citation": 1,
+      "synthesis": 5
+    },
+    "systemB": {
+      "accuracy": 5,
+      "completeness": 5,
+      "citation": 3,
+      "synthesis": 5
+    },
+    "winner": "B",
+    "reasoning": "System B is the winner due to its inclusion of citations, even though they are not perfectly formatted, which provides a better reference framework compared to System A's lack of citations."
+  }
+}

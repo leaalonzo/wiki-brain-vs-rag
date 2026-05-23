@@ -1,0 +1,58 @@
+{
+  "id": "2",
+  "question": "What are the main failure modes of chain-of-thought prompting identified in research?",
+  "reference": "Key failure modes include calculation errors (arithmetic mistakes in intermediate steps), missing-step errors (skipping a necessary reasoning step), and semantic misunderstanding errors (misinterpreting the problem). CoT also fails on tasks that don't benefit from decomposition, and can produce plausible-sounding but unfaithful reasoning chains that don't actually reflect the model's computation.",
+  "source": "language_models_dont_always_say_what_they_think_unfaithful_explanations_in_chain.md",
+  "timestamp": "2026-05-22T17:57:59.609321",
+  "wiki": {
+    "answer": "According to the research summarized in the wiki articles, Chain-of-Thought (CoT) prompting faces several failure modes:\n\n1. **Unfaithful Explanations**: CoT explanations can misrepresent the true reasoning process of the model. As highlighted in the paper \"Language Models Don’t Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting,\" CoT explanations may appear plausible but are often influenced by biasing features in the input, leading to misleading rationalizations that do not accurately reflect the model's decision-making process. This can significantly impact the transparency and safety of AI systems.\n\n2. **Generality and Opaque Mechanisms**: The survey \"Towards Better Chain-of-Thought Prompting Strategies: A Survey\" identifies challenges related to the generality of CoT prompting and the opaque mechanisms behind it. These challenges can hinder the broad applicability and understanding of CoT prompting strategies.\n\n3. **Invalid Reasoning Steps**: The paper \"Towards Understanding Chain-of-Thought Prompting: An Empirical Study of What Matters\" reveals that CoT prompting can maintain high performance even with invalid reasoning steps. This suggests that the validity of reasoning steps is less critical, but it raises questions about the robustness and reliability of the reasoning process.\n\n4. **Calculation and Semantic Errors**: In zero-shot scenarios, CoT prompting can suffer from calculation errors, missing reasoning steps, and semantic misunderstandings, as discussed in the paper \"Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models.\" These errors can affect the accuracy and coherence of the reasoning process.\n\nThese failure modes highlight the need for further research to improve the faithfulness, generality, and robustness of CoT prompting strategies.",
+    "articles_used": [
+      "wiki/concepts/chain-of-thought_(cot)_prompting.md",
+      "wiki/concepts/chain-of-thought_(cot)_reasoning.md",
+      "wiki/concepts/chain-of-thought_prompting.md",
+      "wiki/concepts/chain-of-thought_reasoning.md",
+      "wiki/concepts/few-shot_chain-of-thought.md",
+      "wiki/concepts/few-shot_cot_prompting.md",
+      "wiki/concepts/plan-and-solve_prompting.md",
+      "wiki/concepts/zero-shot_chain-of-thought.md",
+      "wiki/summaries/language_models_dont_always_say_what_they_think_unfaithful_explanations_in_chain.md",
+      "wiki/summaries/towards_better_chain-of-thought_prompting_strategies_a_survey.md",
+      "wiki/summaries/towards_understanding_chain-of-thought_prompting_an_empirical_study_of_what_matt.md",
+      "wiki/summaries/plan-and-solve_prompting_improving_zero-shot_chain-of-thought_reasoning_by_large.md"
+    ],
+    "token_count": 12509,
+    "latency_ms": 4539
+  },
+  "rag": {
+    "answer": "The provided context does not explicitly detail the main failure modes of chain-of-thought (CoT) prompting. However, it does mention some challenges and limitations associated with CoT prompting. For instance, it is noted that CoT prompting still has limitations regarding generality and concerns about its opaque mechanism and unfaithful generation (source [10]). Additionally, the context suggests that while CoT reasoning can be effective, even with invalid demonstrations, the relevance to the query and the correct ordering of reasoning steps are crucial for effective CoT reasoning (source [4]).\n\nIf you need more specific information on failure modes, further research or additional context would be required.",
+    "sources_used": [
+      "towards_better_chain-of-thought_prompting_strategies_a_survey.md",
+      "towards_understanding_chain-of-thought_prompting_an_empirical_study_of_what_matt.md"
+    ],
+    "top_scores": [
+      0.6357,
+      0.6208,
+      0.5957,
+      0.5901,
+      0.5802
+    ],
+    "token_count": 7412,
+    "latency_ms": 4340
+  },
+  "judge": {
+    "systemA": {
+      "accuracy": 4,
+      "completeness": 5,
+      "citation": 3,
+      "synthesis": 4
+    },
+    "systemB": {
+      "accuracy": 3,
+      "completeness": 2,
+      "citation": 2,
+      "synthesis": 2
+    },
+    "winner": "A",
+    "reasoning": "System A provides a more comprehensive and detailed answer with specific failure modes, while System B lacks detail and specificity."
+  }
+}

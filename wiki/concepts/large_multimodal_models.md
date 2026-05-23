@@ -1,0 +1,8 @@
+## Definition
+Large Multimodal Models (LMMs) are advanced artificial intelligence systems capable of processing and generating outputs across multiple modalities, such as text, images, and audio. These models integrate information from diverse sources to perform complex tasks that require understanding and generating multimodal content.
+
+## Context
+LMMs often face challenges related to multimodal misalignment, where the integration of different modalities can result in inconsistencies or hallucinations in the generated outputs. Hallucinations occur when textual outputs are not accurately grounded in the multimodal context, leading to incorrect or misleading information. To address this issue, researchers have developed Factually Augmented Reinforcement Learning from Human Feedback (Fact-RLHF). This method adapts Reinforcement Learning from Human Feedback (RLHF) to the vision-language domain by incorporating factual data, such as image captions, into the reward model. This approach has demonstrated significant improvements in vision-language alignment and performance, achieving a 94% success rate on the LLaVA-Bench dataset and a 60% improvement on the MMHAL-BENCH benchmark. MMHAL-BENCH is a new evaluation benchmark designed to assess model performance with a focus on penalizing hallucinations. The authors have open-sourced their code, model, and data to support further research and development.
+
+## Related Concepts
+[[Multimodal Misalignment]], [[Hallucination]], [[Reinforcement Learning from Human Feedback]], [[Vision-Language Alignment]], [[Factually Augmented RLHF]], [[MMHAL-BENCH]]

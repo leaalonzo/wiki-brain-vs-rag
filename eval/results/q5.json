@@ -1,0 +1,53 @@
+{
+  "id": "5",
+  "question": "How does ERNIE-Search bridge the gap between cross-encoders and dual-encoders for dense retrieval?",
+  "reference": "ERNIE-Search uses self on-the-fly distillation: during training, the dual-encoder student learns from a cross-encoder teacher without requiring the teacher to be pre-trained separately. The cross-encoder provides interaction-based scores as soft labels that guide the dual-encoder to approximate full query-document interaction. This avoids the expensive cascade pipeline while retaining much of the cross-encoder's accuracy.",
+  "source": "ernie-search_bridging_cross-encoder_with_dual-encoder_via_self_on-the-fly_distil.md",
+  "timestamp": "2026-05-22T17:59:38.395644",
+  "wiki": {
+    "answer": "According to the article on [[ernie-search]], ERNIE-Search bridges the gap between cross-encoders and dual-encoders for dense passage retrieval by employing a technique called self on-the-fly distillation. This method facilitates the transfer of knowledge from more expressive models, such as cross-encoders and ColBERT, to dual-encoders, thereby enhancing their performance.\n\nThe approach involves two key techniques:\n\n1. **Interaction Distillation**: This allows dual-encoders to mimic the late interaction capabilities of models like ColBERT. By doing so, dual-encoders can benefit from the rich interaction modeling typically associated with cross-encoders, without incurring the same computational costs.\n\n2. **Cascade Distillation**: This technique involves a stepwise knowledge transfer from cross-encoders to dual-encoders via ColBERT. It addresses the structural differences between teacher (cross-encoder) and student (dual-encoder) models, ensuring that the dual-encoders can effectively learn from the more complex cross-encoders.\n\nThrough these techniques, ERNIE-Search successfully enhances the performance of dual-encoders in open-domain question answering tasks, setting new benchmarks on datasets like MS MARCO Passage Ranking and Natural Questions.",
+    "articles_used": [
+      "wiki/concepts/ernie-search.md",
+      "wiki/concepts/cross-encoder.md",
+      "wiki/concepts/dual-encoder.md",
+      "wiki/concepts/dense_passage_retrieval.md",
+      "wiki/concepts/self_on-the-fly_distillation.md",
+      "wiki/summaries/ernie-search_bridging_cross-encoder_with_dual-encoder_via_self_on-the-fly_distil.md"
+    ],
+    "token_count": 10516,
+    "latency_ms": 23403
+  },
+  "rag": {
+    "answer": "ERNIE-Search bridges the gap between cross-encoders and dual-encoders for dense retrieval by introducing a novel distillation protocol that leverages self on-the-fly distillation. This approach involves jointly training the teacher and student models with shared encoders but different interaction schemes. The methodology includes two core techniques: interaction distillation and cascade distillation.\n\n1. **Interaction Distillation**: This technique involves the teacher and student sharing the same encoding layers but employing different interaction schemes. It focuses on distilling the more expressive late interaction (e.g., ColBERT) into the simpler metric interaction used by dual-encoders. By sharing the same transformer encoders, this method reduces the risk of the models expressing knowledge differently, thus concentrating on the distillation of interaction schemes [6].\n\n2. **Cascade Distillation**: This process involves a multi-step distillation from cross-interaction to late interaction to metric interaction. Here, late interaction models like ColBERT act as a bridge, helping to distill the fine-grained token-level interaction knowledge from cross-encoders, which is then further distilled by the final dual-encoders. This stepwise distillation helps in effectively transferring the complex interaction knowledge from cross-encoders to dual-encoders [6].\n\nThese techniques allow ERNIE-Search to effectively distill knowledge from more expressive models (cross-encoders) to simpler models (dual-encoders), thereby improving the performance of dual-encoders in dense passage retrieval tasks [1][2][4].",
+    "sources_used": [
+      "an_encoder_attribution_analysis_for_dense_passage_retriever_in_open-domain_quest.md",
+      "ernie-search_bridging_cross-encoder_with_dual-encoder_via_self_on-the-fly_distil.md",
+      "rocketqa_an_optimized_training_approach_to_dense_passage_retrieval_for_open-doma.md"
+    ],
+    "top_scores": [
+      0.6331,
+      0.571,
+      0.5693,
+      0.5657,
+      0.5419
+    ],
+    "token_count": 7669,
+    "latency_ms": 13842
+  },
+  "judge": {
+    "systemA": {
+      "accuracy": 5,
+      "completeness": 5,
+      "citation": 3,
+      "synthesis": 5
+    },
+    "systemB": {
+      "accuracy": 5,
+      "completeness": 5,
+      "citation": 3,
+      "synthesis": 5
+    },
+    "winner": "tie",
+    "reasoning": "Both systems provide accurate and complete explanations with strong synthesis, but neither provides detailed citations."
+  }
+}

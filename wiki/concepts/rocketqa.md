@@ -1,0 +1,8 @@
+## Definition
+RocketQA is an optimized training approach designed to enhance dense passage retrieval in open-domain question answering systems. It focuses on improving the performance of dual-encoder architectures by addressing training challenges such as discrepancies between training and inference, the presence of unlabeled positives, and limited training data.
+
+## Context
+RocketQA introduces several innovative techniques to improve retrieval performance. These include cross-batch negatives, which increase the number of available negatives during training; denoised hard negatives, which remove false negatives from top-ranked retrievals to enhance training reliability; and data augmentation using large-scale unsupervised data labeled by a cross-encoder. The approach has demonstrated significant performance improvements over state-of-the-art models on datasets such as MS-MARCO and Natural Questions. Extensive experiments confirm the effectiveness of RocketQA's strategies in improving dense passage retrieval. Additionally, RocketQA enhances end-to-end QA performance using the RocketQA retriever. Notably, manual examination of top-retrieved passages in the MSMARCO dataset revealed that 70% of them are actually positives, highlighting the effectiveness of RocketQA's strategies.
+
+## Related Concepts
+[[Dense Passage Retrieval]], [[Dual-Encoder Architecture]], [[Open-Domain Question Answering]], [[Cross-Batch Negatives]], [[Denoised Hard Negatives]], [[Data Augmentation]], [[Semantic Matching]]

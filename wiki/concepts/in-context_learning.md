@@ -1,0 +1,14 @@
+## Definition
+In-context learning refers to the capability of large language models (LLMs) to generate responses based on the context provided in the input prompt. This involves leveraging examples or information embedded in the prompt to guide the model's output, enabling it to adapt its responses to specific tasks or queries without explicit retraining.
+
+## Context
+In-context learning is crucial for scenarios where LLMs must handle rapidly changing information or debunk false premises. The study "FreshLLMs: Refreshing Large Language Models with Search Engine Augmentation" introduces FreshQA, a dynamic QA benchmark designed to evaluate the factuality of LLMs in the context of current world knowledge. It highlights the limitations of existing LLMs in handling fast-changing information and false premises and proposes FreshPrompt, a method that enhances LLM performance by incorporating up-to-date information from search engines.
+
+FreshPrompt, a few-shot prompting method, significantly improves LLM factuality by integrating search engine results into prompts, outperforming other search-augmented methods and commercial systems. The number and order of retrieved evidence are crucial for the correctness of LLM-generated answers, and concise responses reduce hallucination compared to verbose ones. Human evaluations reveal that LLMs struggle with fast-changing and false-premise questions, regardless of model size.
+
+Additionally, the Chain-of-Thought (CoT) prompting strategy is a significant development in in-context learning. CoT enhances reasoning in LLMs by guiding them through a step-wise reasoning process, ensuring logical and interpretable outputs. This strategy is particularly beneficial for tasks requiring multi-step reasoning and human understanding. Research indicates that even invalid reasoning steps can achieve a significant portion of CoT's performance, with relevance to the query and correct ordering of reasoning steps being crucial for effective reasoning.
+
+The paper "Towards Understanding Chain-of-Thought Prompting: An Empirical Study of What Matters" further explores CoT prompting, revealing that it can maintain high performance even with invalid reasoning steps. This suggests that aspects such as relevance to the query and correct ordering of reasoning steps are more crucial for effective reasoning. The study also suggests that LLMs may already possess reasoning abilities from pretraining, with CoT prompting mainly guiding the format and order of reasoning.
+
+## Related Concepts
+[[FreshQA]], [[FreshPrompt]], [[Hallucination]], [[Search Engine Augmentation]], [[Dynamic QA Benchmark]], [[Chain-of-Thought Prompting]], [[Reasoning on LLM]], [[Multi-step Reasoning]], [[Few-shot Reasoning Tasks]], [[Prompt Design]], [[Extension Strategies]], [[Bridging Objects]], [[Language Templates]]

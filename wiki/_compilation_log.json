@@ -1,0 +1,796 @@
+{
+  "entries": [
+    {
+      "timestamp": "2026-05-23T22:57:42.812453+00:00",
+      "phase": "concept",
+      "concept": "Best-of-N (BoN) Sampling",
+      "prompt_tokens": 492,
+      "completion_tokens": 577,
+      "total_tokens": 1069
+    },
+    {
+      "timestamp": "2026-05-23T22:57:50.950902+00:00",
+      "phase": "concept",
+      "concept": "Chain-of-Thought (CoT)",
+      "prompt_tokens": 473,
+      "completion_tokens": 560,
+      "total_tokens": 1033
+    },
+    {
+      "timestamp": "2026-05-23T22:57:57.049573+00:00",
+      "phase": "concept",
+      "concept": "Electronic Design Automation (EDA)",
+      "prompt_tokens": 583,
+      "completion_tokens": 604,
+      "total_tokens": 1187
+    },
+    {
+      "timestamp": "2026-05-23T22:58:03.294640+00:00",
+      "phase": "concept",
+      "concept": "High-Level Synthesis (HLS)",
+      "prompt_tokens": 560,
+      "completion_tokens": 566,
+      "total_tokens": 1126
+    },
+    {
+      "timestamp": "2026-05-23T22:58:08.794510+00:00",
+      "phase": "concept",
+      "concept": "Large Language Model (LLM)",
+      "prompt_tokens": 585,
+      "completion_tokens": 616,
+      "total_tokens": 1201
+    },
+    {
+      "timestamp": "2026-05-23T22:58:15.238220+00:00",
+      "phase": "concept",
+      "concept": "Out-of-Distribution (OOD) Generalisation",
+      "prompt_tokens": 494,
+      "completion_tokens": 640,
+      "total_tokens": 1134
+    },
+    {
+      "timestamp": "2026-05-23T22:58:22.436115+00:00",
+      "phase": "concept",
+      "concept": "PS+ Prompting",
+      "prompt_tokens": 552,
+      "completion_tokens": 589,
+      "total_tokens": 1141
+    },
+    {
+      "timestamp": "2026-05-23T22:58:27.660343+00:00",
+      "phase": "concept",
+      "concept": "Retrieval Augmented Generation (RAG)",
+      "prompt_tokens": 587,
+      "completion_tokens": 598,
+      "total_tokens": 1185
+    },
+    {
+      "timestamp": "2026-05-23T22:58:35.135039+00:00",
+      "phase": "concept",
+      "concept": "Retrieval-Augmented Generation (RAG)",
+      "prompt_tokens": 560,
+      "completion_tokens": 630,
+      "total_tokens": 1190
+    },
+    {
+      "timestamp": "2026-05-23T22:58:39.847037+00:00",
+      "phase": "concept",
+      "concept": "Supervised Fine-Tuning (SFT)",
+      "prompt_tokens": 492,
+      "completion_tokens": 664,
+      "total_tokens": 1156
+    },
+    {
+      "timestamp": "2026-05-23T22:58:44.720306+00:00",
+      "phase": "concept",
+      "concept": "factuality of LLMs",
+      "prompt_tokens": 542,
+      "completion_tokens": 636,
+      "total_tokens": 1178
+    },
+    {
+      "timestamp": "2026-05-23T22:58:49.841514+00:00",
+      "phase": "concept",
+      "concept": "hallucination in LLMs",
+      "prompt_tokens": 542,
+      "completion_tokens": 558,
+      "total_tokens": 1100
+    },
+    {
+      "timestamp": "2026-05-23T22:58:55.346351+00:00",
+      "phase": "concept",
+      "concept": "multi-step question answering (QA)",
+      "prompt_tokens": 471,
+      "completion_tokens": 586,
+      "total_tokens": 1057
+    },
+    {
+      "timestamp": "2026-05-23T22:58:59.914586+00:00",
+      "phase": "concept",
+      "concept": "power-performance-area (PPA) optimization",
+      "prompt_tokens": 562,
+      "completion_tokens": 609,
+      "total_tokens": 1171
+    },
+    {
+      "timestamp": "2026-05-23T11:38:41.771146+00:00",
+      "phase": "summarize",
+      "file": "a_symmetric_dual_encoding_dense_retrieval_framework_for_knowledge-intensive_visu.md",
+      "prompt_tokens": 3004,
+      "completion_tokens": 693,
+      "total_tokens": 3697
+    },
+    {
+      "timestamp": "2026-05-23T11:38:52.991145+00:00",
+      "phase": "summarize",
+      "file": "coderl_mastering_code_generation_through_pretrained_models_and_deep_reinforcemen.md",
+      "prompt_tokens": 3149,
+      "completion_tokens": 684,
+      "total_tokens": 3833
+    },
+    {
+      "timestamp": "2026-05-23T11:39:02.631122+00:00",
+      "phase": "summarize",
+      "file": "speechdpr_end-to-end_spoken_passage_retrieval_for_open-domain_spoken_question_an.md",
+      "prompt_tokens": 2952,
+      "completion_tokens": 758,
+      "total_tokens": 3710
+    },
+    {
+      "timestamp": "2026-05-23T11:39:09.513313+00:00",
+      "phase": "summarize",
+      "file": "emergent_abilities_of_large_language_models.md",
+      "prompt_tokens": 3027,
+      "completion_tokens": 583,
+      "total_tokens": 3610
+    },
+    {
+      "timestamp": "2026-05-23T11:39:17.704927+00:00",
+      "phase": "summarize",
+      "file": "are_emergent_abilities_of_large_language_models_a_mirage.md",
+      "prompt_tokens": 2942,
+      "completion_tokens": 711,
+      "total_tokens": 3653
+    },
+    {
+      "timestamp": "2026-05-23T11:39:24.799554+00:00",
+      "phase": "summarize",
+      "file": "rule_knowledge_graph_reasoning_with_rule_embedding.md",
+      "prompt_tokens": 3098,
+      "completion_tokens": 686,
+      "total_tokens": 3784
+    },
+    {
+      "timestamp": "2026-05-23T11:39:37.502064+00:00",
+      "phase": "summarize",
+      "file": "teast_temporal_knowledge_graph_embedding_via_archimedean_spiral_timeline.md",
+      "prompt_tokens": 3040,
+      "completion_tokens": 633,
+      "total_tokens": 3673
+    },
+    {
+      "timestamp": "2026-05-23T11:39:45.762031+00:00",
+      "phase": "summarize",
+      "file": "rule_neural-symbolic_knowledge_graph_reasoning_with_rule_embedding.md",
+      "prompt_tokens": 3113,
+      "completion_tokens": 686,
+      "total_tokens": 3799
+    },
+    {
+      "timestamp": "2026-05-23T11:39:51.749868+00:00",
+      "phase": "summarize",
+      "file": "neural_vector_compression_in_approximate_nearest_neighbor_search_on_large_datase.md",
+      "prompt_tokens": 3538,
+      "completion_tokens": 603,
+      "total_tokens": 4141
+    },
+    {
+      "timestamp": "2026-05-23T11:39:59.192459+00:00",
+      "phase": "summarize",
+      "file": "hybrid_retrievers_with_generative_re-rankers.md",
+      "prompt_tokens": 2744,
+      "completion_tokens": 692,
+      "total_tokens": 3436
+    },
+    {
+      "timestamp": "2026-05-23T11:40:04.608918+00:00",
+      "phase": "summarize",
+      "file": "entity-focused_dense_passage_retrieval_for_outside-knowledge_visual_question_ans.md",
+      "prompt_tokens": 2897,
+      "completion_tokens": 539,
+      "total_tokens": 3436
+    },
+    {
+      "timestamp": "2026-05-23T11:40:12.182322+00:00",
+      "phase": "summarize",
+      "file": "improving_code_generation_by_training_with_natural_language_feedback.md",
+      "prompt_tokens": 3279,
+      "completion_tokens": 692,
+      "total_tokens": 3971
+    },
+    {
+      "timestamp": "2026-05-23T11:40:20.387368+00:00",
+      "phase": "summarize",
+      "file": "passage_retrieval_for_outside-knowledge_visual_question_answering.md",
+      "prompt_tokens": 3352,
+      "completion_tokens": 628,
+      "total_tokens": 3980
+    },
+    {
+      "timestamp": "2026-05-23T11:40:26.261341+00:00",
+      "phase": "concept",
+      "concept": "AI safety",
+      "prompt_tokens": 671,
+      "completion_tokens": 696,
+      "total_tokens": 1367
+    },
+    {
+      "timestamp": "2026-05-23T11:40:31.164889+00:00",
+      "phase": "concept",
+      "concept": "Archimedean Spiral",
+      "prompt_tokens": 668,
+      "completion_tokens": 557,
+      "total_tokens": 1225
+    },
+    {
+      "timestamp": "2026-05-23T11:40:37.072959+00:00",
+      "phase": "concept",
+      "concept": "Bi-encoder Framework",
+      "prompt_tokens": 726,
+      "completion_tokens": 609,
+      "total_tokens": 1335
+    },
+    {
+      "timestamp": "2026-05-23T11:40:43.125633+00:00",
+      "phase": "concept",
+      "concept": "Critical Entities",
+      "prompt_tokens": 677,
+      "completion_tokens": 576,
+      "total_tokens": 1253
+    },
+    {
+      "timestamp": "2026-05-23T11:40:49.126581+00:00",
+      "phase": "concept",
+      "concept": "Dense retrieval",
+      "prompt_tokens": 663,
+      "completion_tokens": 558,
+      "total_tokens": 1221
+    },
+    {
+      "timestamp": "2026-05-23T11:40:54.380265+00:00",
+      "phase": "concept",
+      "concept": "Entity-Focused Retrieval",
+      "prompt_tokens": 681,
+      "completion_tokens": 609,
+      "total_tokens": 1290
+    },
+    {
+      "timestamp": "2026-05-23T11:40:58.505260+00:00",
+      "phase": "concept",
+      "concept": "Entity-Relation Dynamics",
+      "prompt_tokens": 666,
+      "completion_tokens": 525,
+      "total_tokens": 1191
+    },
+    {
+      "timestamp": "2026-05-23T11:41:07.231550+00:00",
+      "phase": "concept",
+      "concept": "Interpretability in Machine Learning",
+      "prompt_tokens": 668,
+      "completion_tokens": 621,
+      "total_tokens": 1289
+    },
+    {
+      "timestamp": "2026-05-23T11:41:14.236690+00:00",
+      "phase": "concept",
+      "concept": "KL divergence",
+      "prompt_tokens": 700,
+      "completion_tokens": 592,
+      "total_tokens": 1292
+    },
+    {
+      "timestamp": "2026-05-23T11:41:19.642592+00:00",
+      "phase": "concept",
+      "concept": "Knowledge Retrieval",
+      "prompt_tokens": 677,
+      "completion_tokens": 596,
+      "total_tokens": 1273
+    },
+    {
+      "timestamp": "2026-05-23T11:41:27.447468+00:00",
+      "phase": "concept",
+      "concept": "Link Prediction",
+      "prompt_tokens": 662,
+      "completion_tokens": 574,
+      "total_tokens": 1236
+    },
+    {
+      "timestamp": "2026-05-23T11:41:34.793697+00:00",
+      "phase": "concept",
+      "concept": "Open-domain SQA",
+      "prompt_tokens": 726,
+      "completion_tokens": 686,
+      "total_tokens": 1412
+    },
+    {
+      "timestamp": "2026-05-23T11:41:40.450260+00:00",
+      "phase": "concept",
+      "concept": "Outside-Knowledge VQA",
+      "prompt_tokens": 685,
+      "completion_tokens": 617,
+      "total_tokens": 1302
+    },
+    {
+      "timestamp": "2026-05-23T11:41:47.005609+00:00",
+      "phase": "concept",
+      "concept": "Polish RoBERTa",
+      "prompt_tokens": 681,
+      "completion_tokens": 632,
+      "total_tokens": 1313
+    },
+    {
+      "timestamp": "2026-05-23T11:41:53.763077+00:00",
+      "phase": "concept",
+      "concept": "Semantic Representation",
+      "prompt_tokens": 722,
+      "completion_tokens": 675,
+      "total_tokens": 1397
+    },
+    {
+      "timestamp": "2026-05-23T11:42:00.523248+00:00",
+      "phase": "concept",
+      "concept": "Speech Recognition Errors",
+      "prompt_tokens": 724,
+      "completion_tokens": 627,
+      "total_tokens": 1351
+    },
+    {
+      "timestamp": "2026-05-23T11:42:07.690970+00:00",
+      "phase": "concept",
+      "concept": "Spoken Question Answering",
+      "prompt_tokens": 726,
+      "completion_tokens": 573,
+      "total_tokens": 1299
+    },
+    {
+      "timestamp": "2026-05-23T11:42:13.630161+00:00",
+      "phase": "concept",
+      "concept": "Supervised Learning",
+      "prompt_tokens": 679,
+      "completion_tokens": 582,
+      "total_tokens": 1261
+    },
+    {
+      "timestamp": "2026-05-23T11:42:19.593089+00:00",
+      "phase": "concept",
+      "concept": "Temporal Knowledge Graphs",
+      "prompt_tokens": 666,
+      "completion_tokens": 581,
+      "total_tokens": 1247
+    },
+    {
+      "timestamp": "2026-05-23T11:42:24.535532+00:00",
+      "phase": "concept",
+      "concept": "Temporal Regularization",
+      "prompt_tokens": 664,
+      "completion_tokens": 550,
+      "total_tokens": 1214
+    },
+    {
+      "timestamp": "2026-05-23T11:42:29.924135+00:00",
+      "phase": "concept",
+      "concept": "Tensor Completion",
+      "prompt_tokens": 662,
+      "completion_tokens": 509,
+      "total_tokens": 1171
+    },
+    {
+      "timestamp": "2026-05-23T11:42:39.605627+00:00",
+      "phase": "concept",
+      "concept": "Unsupervised ASR",
+      "prompt_tokens": 728,
+      "completion_tokens": 642,
+      "total_tokens": 1370
+    },
+    {
+      "timestamp": "2026-05-23T11:42:45.964557+00:00",
+      "phase": "concept",
+      "concept": "Visual Question Answering",
+      "prompt_tokens": 681,
+      "completion_tokens": 608,
+      "total_tokens": 1289
+    },
+    {
+      "timestamp": "2026-05-23T11:42:57.663832+00:00",
+      "phase": "concept",
+      "concept": "actor-critic framework",
+      "prompt_tokens": 678,
+      "completion_tokens": 719,
+      "total_tokens": 1397
+    },
+    {
+      "timestamp": "2026-05-23T11:43:05.960189+00:00",
+      "phase": "concept",
+      "concept": "approximate nearest neighbor search",
+      "prompt_tokens": 669,
+      "completion_tokens": 631,
+      "total_tokens": 1300
+    },
+    {
+      "timestamp": "2026-05-23T11:43:13.028364+00:00",
+      "phase": "concept",
+      "concept": "bi-encoder",
+      "prompt_tokens": 677,
+      "completion_tokens": 604,
+      "total_tokens": 1281
+    },
+    {
+      "timestamp": "2026-05-23T11:43:17.945596+00:00",
+      "phase": "concept",
+      "concept": "code generation",
+      "prompt_tokens": 1246,
+      "completion_tokens": 620,
+      "total_tokens": 1866
+    },
+    {
+      "timestamp": "2026-05-23T11:43:23.722603+00:00",
+      "phase": "concept",
+      "concept": "computational cost",
+      "prompt_tokens": 665,
+      "completion_tokens": 520,
+      "total_tokens": 1185
+    },
+    {
+      "timestamp": "2026-05-23T11:43:28.895826+00:00",
+      "phase": "concept",
+      "concept": "deep reinforcement learning",
+      "prompt_tokens": 676,
+      "completion_tokens": 683,
+      "total_tokens": 1359
+    },
+    {
+      "timestamp": "2026-05-23T11:43:34.994386+00:00",
+      "phase": "concept",
+      "concept": "emergent abilities",
+      "prompt_tokens": 1208,
+      "completion_tokens": 533,
+      "total_tokens": 1741
+    },
+    {
+      "timestamp": "2026-05-23T11:43:43.722401+00:00",
+      "phase": "concept",
+      "concept": "entity/relation embedding",
+      "prompt_tokens": 684,
+      "completion_tokens": 558,
+      "total_tokens": 1242
+    },
+    {
+      "timestamp": "2026-05-23T11:43:50.725623+00:00",
+      "phase": "concept",
+      "concept": "entity/relation embeddings",
+      "prompt_tokens": 688,
+      "completion_tokens": 557,
+      "total_tokens": 1245
+    },
+    {
+      "timestamp": "2026-05-23T11:43:56.762736+00:00",
+      "phase": "concept",
+      "concept": "few-shot prompting",
+      "prompt_tokens": 665,
+      "completion_tokens": 582,
+      "total_tokens": 1247
+    },
+    {
+      "timestamp": "2026-05-23T11:44:04.941550+00:00",
+      "phase": "concept",
+      "concept": "first-order logic",
+      "prompt_tokens": 686,
+      "completion_tokens": 652,
+      "total_tokens": 1338
+    },
+    {
+      "timestamp": "2026-05-23T11:44:12.006685+00:00",
+      "phase": "concept",
+      "concept": "fusion-in-decoder",
+      "prompt_tokens": 745,
+      "completion_tokens": 624,
+      "total_tokens": 1369
+    },
+    {
+      "timestamp": "2026-05-23T11:44:17.875717+00:00",
+      "phase": "concept",
+      "concept": "generative re-ranking",
+      "prompt_tokens": 679,
+      "completion_tokens": 576,
+      "total_tokens": 1255
+    },
+    {
+      "timestamp": "2026-05-23T11:44:22.964162+00:00",
+      "phase": "concept",
+      "concept": "high-dimensional data",
+      "prompt_tokens": 667,
+      "completion_tokens": 624,
+      "total_tokens": 1291
+    },
+    {
+      "timestamp": "2026-05-23T11:44:29.651724+00:00",
+      "phase": "concept",
+      "concept": "imitation learning",
+      "prompt_tokens": 700,
+      "completion_tokens": 562,
+      "total_tokens": 1262
+    },
+    {
+      "timestamp": "2026-05-23T11:44:36.434226+00:00",
+      "phase": "concept",
+      "concept": "iterative knowledge distillation",
+      "prompt_tokens": 745,
+      "completion_tokens": 661,
+      "total_tokens": 1406
+    },
+    {
+      "timestamp": "2026-05-23T11:44:42.129627+00:00",
+      "phase": "concept",
+      "concept": "knowledge distillation",
+      "prompt_tokens": 743,
+      "completion_tokens": 658,
+      "total_tokens": 1401
+    },
+    {
+      "timestamp": "2026-05-23T11:44:46.837846+00:00",
+      "phase": "concept",
+      "concept": "knowledge graph embedding",
+      "prompt_tokens": 1238,
+      "completion_tokens": 600,
+      "total_tokens": 1838
+    },
+    {
+      "timestamp": "2026-05-23T11:44:55.760188+00:00",
+      "phase": "concept",
+      "concept": "knowledge graph reasoning",
+      "prompt_tokens": 1238,
+      "completion_tokens": 659,
+      "total_tokens": 1897
+    },
+    {
+      "timestamp": "2026-05-23T11:45:02.260875+00:00",
+      "phase": "concept",
+      "concept": "logical inference",
+      "prompt_tokens": 684,
+      "completion_tokens": 637,
+      "total_tokens": 1321
+    },
+    {
+      "timestamp": "2026-05-23T11:45:07.474237+00:00",
+      "phase": "concept",
+      "concept": "logical rules",
+      "prompt_tokens": 680,
+      "completion_tokens": 599,
+      "total_tokens": 1279
+    },
+    {
+      "timestamp": "2026-05-23T11:45:14.000623+00:00",
+      "phase": "concept",
+      "concept": "loss function",
+      "prompt_tokens": 665,
+      "completion_tokens": 652,
+      "total_tokens": 1317
+    },
+    {
+      "timestamp": "2026-05-23T11:45:18.902206+00:00",
+      "phase": "concept",
+      "concept": "metrics",
+      "prompt_tokens": 669,
+      "completion_tokens": 579,
+      "total_tokens": 1248
+    },
+    {
+      "timestamp": "2026-05-23T11:45:26.563262+00:00",
+      "phase": "concept",
+      "concept": "model evaluation",
+      "prompt_tokens": 671,
+      "completion_tokens": 638,
+      "total_tokens": 1309
+    },
+    {
+      "timestamp": "2026-05-23T11:45:32.509316+00:00",
+      "phase": "concept",
+      "concept": "model parameters",
+      "prompt_tokens": 663,
+      "completion_tokens": 587,
+      "total_tokens": 1250
+    },
+    {
+      "timestamp": "2026-05-23T11:45:38.300449+00:00",
+      "phase": "concept",
+      "concept": "model scaling",
+      "prompt_tokens": 671,
+      "completion_tokens": 654,
+      "total_tokens": 1325
+    },
+    {
+      "timestamp": "2026-05-23T11:45:46.836786+00:00",
+      "phase": "concept",
+      "concept": "mt5-13b-mmarco",
+      "prompt_tokens": 687,
+      "completion_tokens": 631,
+      "total_tokens": 1318
+    },
+    {
+      "timestamp": "2026-05-23T11:45:53.723418+00:00",
+      "phase": "concept",
+      "concept": "multi-modal retrieval",
+      "prompt_tokens": 1278,
+      "completion_tokens": 620,
+      "total_tokens": 1898
+    },
+    {
+      "timestamp": "2026-05-23T11:46:02.251613+00:00",
+      "phase": "concept",
+      "concept": "natural language feedback",
+      "prompt_tokens": 702,
+      "completion_tokens": 598,
+      "total_tokens": 1300
+    },
+    {
+      "timestamp": "2026-05-23T11:46:07.933716+00:00",
+      "phase": "concept",
+      "concept": "neural autoencoders",
+      "prompt_tokens": 669,
+      "completion_tokens": 673,
+      "total_tokens": 1342
+    },
+    {
+      "timestamp": "2026-05-23T11:46:13.599932+00:00",
+      "phase": "concept",
+      "concept": "neural information retrieval",
+      "prompt_tokens": 677,
+      "completion_tokens": 590,
+      "total_tokens": 1267
+    },
+    {
+      "timestamp": "2026-05-23T11:46:19.069932+00:00",
+      "phase": "concept",
+      "concept": "neural scaling laws",
+      "prompt_tokens": 673,
+      "completion_tokens": 588,
+      "total_tokens": 1261
+    },
+    {
+      "timestamp": "2026-05-23T11:46:26.827317+00:00",
+      "phase": "concept",
+      "concept": "neural-symbolic learning",
+      "prompt_tokens": 1240,
+      "completion_tokens": 651,
+      "total_tokens": 1891
+    },
+    {
+      "timestamp": "2026-05-23T11:46:33.271743+00:00",
+      "phase": "concept",
+      "concept": "passage retrieval",
+      "prompt_tokens": 1210,
+      "completion_tokens": 646,
+      "total_tokens": 1856
+    },
+    {
+      "timestamp": "2026-05-23T11:46:41.065553+00:00",
+      "phase": "concept",
+      "concept": "phase transition",
+      "prompt_tokens": 663,
+      "completion_tokens": 619,
+      "total_tokens": 1282
+    },
+    {
+      "timestamp": "2026-05-23T11:46:47.233546+00:00",
+      "phase": "concept",
+      "concept": "pretrained language models",
+      "prompt_tokens": 676,
+      "completion_tokens": 643,
+      "total_tokens": 1319
+    },
+    {
+      "timestamp": "2026-05-23T11:46:55.651709+00:00",
+      "phase": "concept",
+      "concept": "query expansion",
+      "prompt_tokens": 663,
+      "completion_tokens": 565,
+      "total_tokens": 1228
+    },
+    {
+      "timestamp": "2026-05-23T11:47:00.865748+00:00",
+      "phase": "concept",
+      "concept": "rank fusion",
+      "prompt_tokens": 663,
+      "completion_tokens": 547,
+      "total_tokens": 1210
+    },
+    {
+      "timestamp": "2026-05-23T11:47:07.428240+00:00",
+      "phase": "concept",
+      "concept": "rule embedding",
+      "prompt_tokens": 1236,
+      "completion_tokens": 641,
+      "total_tokens": 1877
+    },
+    {
+      "timestamp": "2026-05-23T11:47:15.634896+00:00",
+      "phase": "concept",
+      "concept": "sample efficiency",
+      "prompt_tokens": 700,
+      "completion_tokens": 509,
+      "total_tokens": 1209
+    },
+    {
+      "timestamp": "2026-05-23T11:47:22.010083+00:00",
+      "phase": "concept",
+      "concept": "scaling laws",
+      "prompt_tokens": 663,
+      "completion_tokens": 579,
+      "total_tokens": 1242
+    },
+    {
+      "timestamp": "2026-05-23T11:47:28.092045+00:00",
+      "phase": "concept",
+      "concept": "soft rule inference",
+      "prompt_tokens": 682,
+      "completion_tokens": 516,
+      "total_tokens": 1198
+    },
+    {
+      "timestamp": "2026-05-23T11:47:33.961911+00:00",
+      "phase": "concept",
+      "concept": "sparse retrieval",
+      "prompt_tokens": 675,
+      "completion_tokens": 546,
+      "total_tokens": 1221
+    },
+    {
+      "timestamp": "2026-05-23T11:47:41.086385+00:00",
+      "phase": "concept",
+      "concept": "storage efficiency",
+      "prompt_tokens": 665,
+      "completion_tokens": 604,
+      "total_tokens": 1269
+    },
+    {
+      "timestamp": "2026-05-23T11:47:47.877911+00:00",
+      "phase": "concept",
+      "concept": "symmetric dual encoding",
+      "prompt_tokens": 743,
+      "completion_tokens": 585,
+      "total_tokens": 1328
+    },
+    {
+      "timestamp": "2026-05-23T11:47:53.557843+00:00",
+      "phase": "concept",
+      "concept": "training compute",
+      "prompt_tokens": 663,
+      "completion_tokens": 595,
+      "total_tokens": 1258
+    },
+    {
+      "timestamp": "2026-05-23T11:48:02.799461+00:00",
+      "phase": "concept",
+      "concept": "unit tests",
+      "prompt_tokens": 674,
+      "completion_tokens": 573,
+      "total_tokens": 1247
+    },
+    {
+      "timestamp": "2026-05-23T11:48:09.176508+00:00",
+      "phase": "concept",
+      "concept": "vector compression",
+      "prompt_tokens": 665,
+      "completion_tokens": 635,
+      "total_tokens": 1300
+    },
+    {
+      "timestamp": "2026-05-23T11:48:15.320059+00:00",
+      "phase": "concept",
+      "concept": "zero-shot transfer",
+      "prompt_tokens": 676,
+      "completion_tokens": 610,
+      "total_tokens": 1286
+    }
+  ]
+}

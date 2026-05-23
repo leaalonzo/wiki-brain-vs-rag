@@ -1,0 +1,56 @@
+{
+  "id": "6",
+  "question": "How does AWQ (Activation-aware Weight Quantization) compress LLMs with minimal accuracy loss?",
+  "reference": "AWQ identifies a small fraction of weights (salient weights) that are critical based on activation magnitudes rather than weight magnitudes alone. These salient weights are protected from aggressive quantization while the remaining weights are quantized to low bit-widths (e.g., 4-bit). This activation-aware selection allows near-lossless 4-bit quantization without requiring gradient-based training or large calibration datasets.",
+  "source": "awq_activation-aware_weight_quantization_for_llm_compression_and_acceleration.md",
+  "timestamp": "2026-05-22T18:00:17.105997",
+  "wiki": {
+    "answer": "According to the article on [[activation-aware_weight_quantization]], Activation-aware Weight Quantization (AWQ) compresses large language models (LLMs) by employing low-bit weight-only quantization, which reduces the model's memory usage and accelerates inference. AWQ achieves minimal accuracy loss by identifying and protecting a small fraction (0.1%-1%) of salient weights based on activation distribution. These salient weights are crucial for maintaining the model's performance and are protected to minimize quantization error. AWQ does not require backpropagation or reconstruction, making it a hardware-friendly approach. Additionally, it uses per-channel scaling to further optimize quantization error reduction, ensuring that the model's performance is preserved across various domains and modalities. This method has been implemented in frameworks like TinyChat, which demonstrates significant speedups and effective deployment of large models like Llama-2 on edge devices.",
+    "articles_used": [
+      "wiki/concepts/activation-aware_weight_quantization.md",
+      "wiki/concepts/low-bit_weight-only_quantization.md",
+      "wiki/concepts/llm_weight_compression.md",
+      "wiki/concepts/memory_compression.md",
+      "wiki/concepts/sparse-quantized_representation.md",
+      "wiki/concepts/salient_weights.md",
+      "wiki/concepts/outlier_weights.md",
+      "wiki/concepts/per-channel_scaling.md",
+      "wiki/summaries/awq_activation-aware_weight_quantization_for_llm_compression_and_acceleration.md",
+      "wiki/summaries/spqr_a_sparse-quantized_representation_for_near-lossless_llm_weight_compression.md"
+    ],
+    "token_count": 11188,
+    "latency_ms": 24441
+  },
+  "rag": {
+    "answer": "Activation-aware Weight Quantization (AWQ) compresses large language models (LLMs) with minimal accuracy loss by focusing on the importance of weights based on activation distributions rather than weight distributions. The key insights and techniques used in AWQ include:\n\n1. **Salient Weights Identification**: AWQ identifies a small fraction (0.1%-1%) of weights as \"salient\" based on the activation distribution. These weights are crucial for the model's performance because they process more important features. By skipping the quantization of these salient weights, AWQ significantly reduces quantization loss.\n\n2. **Per-channel Scaling**: To avoid the inefficiencies of mixed-precision implementations, AWQ employs a per-channel scaling method. This method scales up the salient weight channels to reduce their relative quantization error, thereby preserving the model's performance without needing to keep these weights in higher precision formats like FP16.\n\n3. **Hardware Efficiency**: AWQ is designed to be hardware-friendly, avoiding the need for backpropagation or reconstruction, which helps maintain the generalization ability of LLMs across various domains and modalities without overfitting to the calibration set.\n\n4. **TinyChat Framework**: AWQ is implemented in the TinyChat framework, which efficiently converts theoretical memory savings from 4-bit quantization into actual speedup. TinyChat optimizes inference by minimizing overhead through on-the-fly dequantization, efficient weight packing, and kernel fusion.\n\nExperiments have shown that AWQ outperforms existing quantization methods across various tasks and model families, achieving good quantization performance even for instruction-tuned and multi-modal LMs, while maintaining a lower memory footprint and providing significant speedup [1][2][3].\n\nSources:\n[1] awq_activation-aware_weight_quantization_for_llm_compression_and_acceleration.md\n[2] awq_activation-aware_weight_quantization_for_llm_compression_and_acceleration.md\n[3] awq_activation-aware_weight_quantization_for_llm_compression_and_acceleration.md",
+    "sources_used": [
+      "awq_activation-aware_weight_quantization_for_llm_compression_and_acceleration.md",
+      "spqr_a_sparse-quantized_representation_for_near-lossless_llm_weight_compression.md"
+    ],
+    "top_scores": [
+      0.8135,
+      0.76,
+      0.7243,
+      0.7148,
+      0.7067
+    ],
+    "token_count": 8248,
+    "latency_ms": 20274
+  },
+  "judge": {
+    "systemA": {
+      "accuracy": 4,
+      "completeness": 4,
+      "citation": 2,
+      "synthesis": 4
+    },
+    "systemB": {
+      "accuracy": 5,
+      "completeness": 5,
+      "citation": 3,
+      "synthesis": 5
+    },
+    "winner": "B",
+    "reasoning": "System B provides a more detailed and accurate explanation with better synthesis of ideas, despite both systems having issues with citation quality."
+  }
+}

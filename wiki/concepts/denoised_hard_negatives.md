@@ -1,0 +1,8 @@
+## Definition
+Denoised hard negatives are a technique used in training dual-encoder architectures for dense passage retrieval systems. This approach involves identifying and removing false negatives from the training data to enhance the reliability and effectiveness of the training process. By eliminating passages that are incorrectly labeled as irrelevant, the model's ability to distinguish between relevant and irrelevant passages is improved.
+
+## Context
+In the context of RocketQA, an optimized training approach for open-domain question answering, denoised hard negatives play a crucial role in improving the retrieval performance of dense passage retrieval systems. Traditional training methods often include hard negatives—passages that are difficult to distinguish from true positives. However, these can sometimes include false negatives, which are actually relevant passages mislabeled as irrelevant. RocketQA addresses this by implementing denoised hard negatives, ensuring that the training data is more accurate and thus leading to better model performance. This technique is part of a broader strategy that includes cross-batch negatives and data augmentation, contributing to significant performance improvements on datasets like MSMARCO and Natural Questions. Extensive experiments confirm the effectiveness of RocketQA's strategies in enhancing dense passage retrieval and end-to-end question answering systems.
+
+## Related Concepts
+[[RocketQA]], [[Dense Passage Retrieval]], [[Dual-Encoder Architecture]], [[Cross-Batch Negatives]], [[Data Augmentation]], [[Open-Domain Question Answering]], [[Semantic Matching]]

@@ -1,0 +1,59 @@
+{
+  "id": "1",
+  "question": "What is chain-of-thought prompting and why does it improve reasoning in large language models?",
+  "reference": "Chain-of-thought (CoT) prompting elicits step-by-step intermediate reasoning from LLMs before producing a final answer. It improves performance on multi-step tasks because breaking a problem into reasoning steps reduces errors at each step and makes the reasoning process transparent. It can be applied few-shot (with worked examples) or zero-shot (e.g., \"Let's think step by step\").",
+  "source": "towards_understanding_chain-of-thought_prompting_an_empirical_study_of_what_matt.md",
+  "timestamp": "2026-05-22T17:57:46.211990",
+  "wiki": {
+    "answer": "Chain-of-thought (CoT) prompting is a technique used in large language models (LLMs) to enhance their reasoning capabilities by guiding them through a step-wise reasoning process. This approach involves generating intermediate reasoning steps, which helps improve the model's ability to handle multi-step reasoning tasks and ensures a logical and interpretable reasoning chain. This is beneficial for human understanding and enhances the model's performance on complex tasks.\n\nAccording to the article [[chain-of-thought_(cot)_prompting]], CoT prompting is effective across various tasks and is influenced by factors such as task types, prompt design, extension strategies, and the models used. It improves LLM performance and interpretability by incorporating intermediate steps, which makes the reasoning process more transparent and understandable.\n\nMoreover, the paper \"Towards Understanding Chain-of-Thought Prompting: An Empirical Study of What Matters\" highlights that CoT prompting significantly improves multi-step reasoning by encouraging the generation of intermediate rationales. It suggests that even invalid reasoning steps can maintain a high level of performance, indicating that the relevance and correct ordering of reasoning steps are crucial for effective CoT reasoning.\n\nOverall, CoT prompting enhances reasoning in LLMs by structuring the thought process, which helps in breaking down complex questions into manageable parts, leading to more accurate and coherent responses.",
+    "articles_used": [
+      "wiki/concepts/chain-of-thought_(cot)_prompting.md",
+      "wiki/concepts/chain-of-thought_(cot)_reasoning.md",
+      "wiki/concepts/chain-of-thought_prompting.md",
+      "wiki/concepts/chain-of-thought_reasoning.md",
+      "wiki/concepts/few-shot_chain-of-thought.md",
+      "wiki/concepts/plan-and-solve_prompting.md",
+      "wiki/concepts/zero-shot-cot.md",
+      "wiki/concepts/zero-shot_chain-of-thought.md",
+      "wiki/summaries/plan-and-solve_prompting_improving_zero-shot_chain-of-thought_reasoning_by_large.md",
+      "wiki/summaries/towards_better_chain-of-thought_prompting_strategies_a_survey.md",
+      "wiki/summaries/towards_understanding_chain-of-thought_prompting_an_empirical_study_of_what_matt.md",
+      "wiki/summaries/reasoning_implicit_sentiment_with_chain-of-thought_prompting.md"
+    ],
+    "token_count": 12327,
+    "latency_ms": 4317
+  },
+  "rag": {
+    "answer": "Chain-of-thought (CoT) prompting is a strategy used in large language models (LLMs) to improve their reasoning abilities by encouraging them to generate intermediate rationales or reasoning steps when solving a problem. This approach involves providing a series of reasoning steps in the demonstrations, which helps the model to explicitly generate its intermediate reasoning process before predicting the final answer [5].\n\nThe effectiveness of CoT prompting lies in its ability to improve multi-step reasoning tasks. By breaking down complex problems into smaller, manageable steps, CoT prompting allows LLMs to handle tasks that require logical thinking and evidence-based reasoning more effectively. This method has been shown to significantly enhance the performance of LLMs on various reasoning benchmarks [7].\n\nDespite its success, there is still ongoing research to understand what makes CoT prompting effective. Some studies suggest that the relevance of the reasoning steps to the query and the correct ordering of these steps are crucial for the effectiveness of CoT prompting. Interestingly, even when invalid reasoning steps are used in demonstrations, LLMs can still achieve a high percentage of the performance obtained using valid CoT, indicating that LLMs might already possess inherent reasoning abilities from pretraining [5][8].\n\nOverall, CoT prompting helps LLMs by providing a structured way to approach reasoning tasks, which can lead to more accurate and coherent outputs [5][9].",
+    "sources_used": [
+      "plan-and-solve_prompting_improving_zero-shot_chain-of-thought_reasoning_by_large.md",
+      "towards_better_chain-of-thought_prompting_strategies_a_survey.md",
+      "towards_understanding_chain-of-thought_prompting_an_empirical_study_of_what_matt.md"
+    ],
+    "top_scores": [
+      0.6877,
+      0.6648,
+      0.6584,
+      0.6574,
+      0.6519
+    ],
+    "token_count": 7478,
+    "latency_ms": 6112
+  },
+  "judge": {
+    "systemA": {
+      "accuracy": 5,
+      "completeness": 5,
+      "citation": 2,
+      "synthesis": 4
+    },
+    "systemB": {
+      "accuracy": 5,
+      "completeness": 5,
+      "citation": 3,
+      "synthesis": 4
+    },
+    "winner": "B",
+    "reasoning": "System B provides slightly better citation quality, referencing specific studies and benchmarks, which enhances its credibility."
+  }
+}

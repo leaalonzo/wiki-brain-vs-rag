@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "2306f583172c15c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "936452c4728fdc0c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3077e04089e7e0e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/_index.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "729854ce9679227b",
+    "type": "split",
+    "children": [
+      {
+        "id": "df272adf0943b553",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b9cd9b01bd12eaa4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1e3a1c7707b4e03b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0afc7312a02fa2aa",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e4dfbf352886fda7",
+    "type": "split",
+    "children": [
+      {
+        "id": "03ca92b499f97507",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c81e2008d9bc0eda",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "wiki/_index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for _index"
+            }
+          },
+          {
+            "id": "4407688d78c8709a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "wiki/_index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from _index"
+            }
+          },
+          {
+            "id": "32a9eaa58b68b7c6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9c69ba908b0cc6fe",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "033986ecdadd00be",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "wiki/_index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of _index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "3077e04089e7e0e2",
+  "lastOpenFiles": [
+    "raw/fast_inference_from_transformers_via_speculative_decoding.md",
+    "wiki/concepts/zero-shot_transfer.md",
+    "wiki/concepts/vector_compression.md",
+    "wiki/concepts/unit_tests.md",
+    "wiki/concepts/training_compute.md",
+    "wiki/concepts/symmetric_dual_encoding.md",
+    "wiki/concepts/storage_efficiency.md",
+    "wiki/concepts/sparse_retrieval.md",
+    "wiki/concepts/soft_rule_inference.md",
+    "wiki/concepts/scaling_laws.md",
+    "wiki/concepts/sample_efficiency.md",
+    "wiki/concepts/rule_embedding.md",
+    "wiki/concepts/rank_fusion.md",
+    "wiki/concepts/query_expansion.md",
+    "wiki/concepts/pretrained_language_models.md",
+    "wiki/concepts/phase_transition.md",
+    "wiki/concepts/passage_retrieval.md",
+    "wiki/concepts/neural-symbolic_learning.md",
+    "wiki/concepts/neural_scaling_laws.md",
+    "wiki/concepts/neural_information_retrieval.md",
+    "wiki/concepts/neural_autoencoders.md",
+    "wiki/concepts/natural_language_feedback.md",
+    "wiki/concepts/multi-modal_retrieval.md",
+    "wiki/concepts/mt5-13b-mmarco.md",
+    "wiki/concepts/model_scaling.md",
+    "wiki/concepts/model_parameters.md",
+    "raw/pdfs/improving_code_generation_by_training_with_natural_language_feedback.pdf",
+    "raw/pdfs/coderl_mastering_code_generation_through_pretrained_models_and_deep_reinforcemen.pdf",
+    "raw/pdfs/neural_vector_compression_in_approximate_nearest_neighbor_search_on_large_datase.pdf",
+    "raw/pdfs/approximate_nearest_neighbor_search_by_cyclic_hierarchical_product_quantization.pdf",
+    "raw/pdfs/passage_retrieval_for_outside-knowledge_visual_question_answering.pdf",
+    "raw/pdfs/a_symmetric_dual_encoding_dense_retrieval_framework_for_knowledge-intensive_visu.pdf",
+    "raw/pdfs/speechdpr_end-to-end_spoken_passage_retrieval_for_open-domain_spoken_question_an.pdf",
+    "raw/pdfs/entity-focused_dense_passage_retrieval_for_outside-knowledge_visual_question_ans.pdf",
+    "raw/pdfs/hybrid_retrievers_with_generative_re-rankers.pdf",
+    "raw/pdfs/are_emergent_abilities_of_large_language_models_a_mirage.pdf",
+    "Untitled.canvas"
+  ]
+}

@@ -1,0 +1,59 @@
+# Semantic Scholar search queries for wiki-brain-vs-rag ingestion.
+# Each entry: tag (used as frontmatter query_tag + log label) + query string.
+# Run: python -m tools.fetch_papers
+
+queries:
+
+  # ── Foundational AI / Deep Learning ──────────────────────────────────────
+  - tag: transformers
+    query: "attention is all you need transformer architecture"
+
+  - tag: large_language_models
+    query: "large language models emergent abilities scaling laws"
+
+  - tag: reinforcement_learning_from_human_feedback
+    query: "reinforcement learning from human feedback RLHF instruction tuning"
+
+  # ── Retrieval-Augmented Generation ───────────────────────────────────────
+  - tag: rag_retrieval
+    query: "retrieval augmented generation RAG knowledge grounded language model"
+
+  - tag: dense_retrieval
+    query: "dense passage retrieval bi-encoder question answering"
+
+  - tag: vector_databases
+    query: "approximate nearest neighbor vector database embedding search"
+
+  # ── Knowledge Representation & Memory ───────────────────────────────────
+  - tag: knowledge_graphs
+    query: "knowledge graph embedding reasoning entity relation"
+
+  - tag: external_memory_llm
+    query: "external memory augmented language model long-context retrieval"
+
+  - tag: continual_learning
+    query: "continual learning catastrophic forgetting neural networks"
+
+  # ── Agents & Tool Use ────────────────────────────────────────────────────
+  - tag: llm_agents
+    query: "LLM autonomous agents tool use planning reasoning"
+
+  - tag: chain_of_thought
+    query: "chain of thought prompting step by step reasoning"
+
+  - tag: code_generation
+    query: "code generation large language models program synthesis"
+
+  # ── Evaluation & Benchmarking ────────────────────────────────────────────
+  - tag: llm_evaluation
+    query: "LLM evaluation benchmark factuality hallucination"
+
+  - tag: rag_evaluation
+    query: "RAG evaluation faithfulness relevance answer grounding"
+
+  # ── Efficient Inference ──────────────────────────────────────────────────
+  - tag: quantization
+    query: "quantization LLM weight compression inference efficiency"
+
+  - tag: speculative_decoding
+    query: "speculative decoding fast inference language model"

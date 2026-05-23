@@ -1,0 +1,58 @@
+{
+  "id": "3",
+  "question": "How does Plan-and-Solve (PS) prompting differ from standard zero-shot chain-of-thought prompting?",
+  "reference": "Plan-and-Solve (PS) prompting adds an explicit planning step before the reasoning chain: the model first devises a plan to solve the problem, then executes the steps. Unlike \"Let's think step by step,\" PS prompting reduces missing-step errors by forcing the model to outline the full solution strategy before computing. PS+ extends this by also instructing the model to extract relevant variables and compute carefully.",
+  "source": "plan-and-solve_prompting_improving_zero-shot_chain-of-thought_reasoning_by_large.md",
+  "timestamp": "2026-05-22T17:58:10.843622",
+  "wiki": {
+    "answer": "Plan-and-Solve (PS) prompting differs from standard zero-shot chain-of-thought (CoT) prompting primarily in its structured approach to task decomposition and execution. According to the article on [[plan-and-solve_prompting]], PS prompting enhances reasoning capabilities by dividing complex tasks into smaller, manageable subtasks through a two-step process: planning and executing. This structured approach addresses the limitations of traditional zero-shot CoT methods, which often suffer from calculation errors, missing reasoning steps, and semantic misunderstandings.\n\nIn contrast, standard zero-shot CoT prompting involves generating a sequence of reasoning steps directly from the prompt without prior examples or training on similar tasks, as described in [[zero-shot_chain-of-thought]]. This method can struggle with the aforementioned errors due to its less structured nature.\n\nFurthermore, PS prompting, particularly its PS+ variant, incorporates detailed instructions to further reduce errors and improve the quality of reasoning steps, making it competitive with few-shot CoT approaches and even surpassing them in certain datasets. This refinement is not typically present in standard zero-shot CoT prompting.",
+    "articles_used": [
+      "wiki/concepts/plan-and-solve_prompting.md",
+      "wiki/concepts/zero-shot_chain-of-thought.md",
+      "wiki/concepts/chain-of-thought_(cot)_prompting.md",
+      "wiki/concepts/chain-of-thought_reasoning.md",
+      "wiki/concepts/reasoning_on_llm.md",
+      "wiki/concepts/prompting_strategies.md",
+      "wiki/concepts/reasoning_steps.md",
+      "wiki/concepts/multi-step_reasoning.md",
+      "wiki/summaries/plan-and-solve_prompting_improving_zero-shot_chain-of-thought_reasoning_by_large.md",
+      "wiki/summaries/towards_better_chain-of-thought_prompting_strategies_a_survey.md",
+      "wiki/summaries/towards_understanding_chain-of-thought_prompting_an_empirical_study_of_what_matt.md",
+      "wiki/summaries/interleaving_retrieval_with_chain-of-thought_reasoning_for_knowledge-intensive_m.md"
+    ],
+    "token_count": 11983,
+    "latency_ms": 30292
+  },
+  "rag": {
+    "answer": "Plan-and-Solve (PS) prompting differs from standard zero-shot chain-of-thought (CoT) prompting primarily in its approach to problem-solving and the structure of its prompts.\n\n1. **Planning Phase**: Unlike Zero-shot-CoT, which simply appends \"Let's think step by step\" to encourage multi-step reasoning, PS prompting explicitly instructs the language model to first devise a plan. This involves breaking down the problem into smaller subtasks before attempting to solve it. This planning phase is intended to address issues like missing reasoning steps and calculation errors that are sometimes present in Zero-shot-CoT outputs [1][2].\n\n2. **Execution Phase**: After devising a plan, PS prompting guides the model to carry out the plan step-by-step. This structured approach aims to ensure that intermediate calculations and reasoning steps are correctly performed, reducing errors in the final output [1][2].\n\n3. **Detailed Instructions**: PS prompting includes more detailed instructions compared to Zero-shot-CoT. For instance, it might instruct the model to extract relevant variables and calculate intermediate results carefully, which helps in minimizing calculation errors and improving the quality of the reasoning process [2].\n\n4. **Performance**: The PS prompting strategy has been shown to outperform Zero-shot-CoT in various reasoning tasks, including arithmetic, commonsense, and symbolic reasoning problems. It provides a higher-quality reasoning process by offering more guidance and structure to the language model [2][3].\n\nOverall, Plan-and-Solve prompting enhances the reasoning capabilities of language models by introducing a planning phase and providing detailed instructions, which help in reducing errors and improving the coherence of the reasoning process.",
+    "sources_used": [
+      "plan-and-solve_prompting_improving_zero-shot_chain-of-thought_reasoning_by_large.md",
+      "towards_better_chain-of-thought_prompting_strategies_a_survey.md"
+    ],
+    "top_scores": [
+      0.7283,
+      0.6942,
+      0.6635,
+      0.6319,
+      0.6202
+    ],
+    "token_count": 7877,
+    "latency_ms": 12249
+  },
+  "judge": {
+    "systemA": {
+      "accuracy": 4,
+      "completeness": 4,
+      "citation": 2,
+      "synthesis": 4
+    },
+    "systemB": {
+      "accuracy": 5,
+      "completeness": 5,
+      "citation": 3,
+      "synthesis": 5
+    },
+    "winner": "B",
+    "reasoning": "System B provides a more detailed and structured explanation of Plan-and-Solve prompting, with clearer distinctions and examples, despite both systems lacking proper citation formatting."
+  }
+}

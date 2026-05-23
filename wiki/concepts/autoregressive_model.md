@@ -1,0 +1,8 @@
+## Definition
+An autoregressive model is a type of statistical model used for predicting future data points in a time series by regressing the variable of interest on its own previous values. It is a foundational concept in time series analysis and is widely used in various fields such as economics, finance, and machine learning.
+
+## Context
+Autoregressive models are integral to the development of large language models (LLMs) and other machine learning applications. In the context of LLMs, autoregressive models are employed to predict the next word in a sequence, thereby enabling the generation of coherent and contextually relevant text. The UniTSyn dataset, designed to enhance the capabilities of LLMs in generating unit tests, leverages autoregressive models to improve test generation accuracy and code coverage. UniTSyn comprises 2.7 million focal-test pairs across five mainstream programming languages, utilizing the Language Server Protocol for efficient data collection. An autoregressive model trained on UniTSyn, known as UniTester, has demonstrated significant performance improvements in generating accurate and complete tests, enhancing the models' understanding of expected behaviors and logic paths.
+
+## Related Concepts
+[[Time Series Analysis]], [[Large Language Models]], [[Unit Test Synthesis]], [[Machine Learning]], [[Statistical Models]], [[UniTSyn]], [[Language Server Protocol]], [[Code Coverage]]

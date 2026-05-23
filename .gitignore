@@ -1,0 +1,38 @@
+# Secrets
+.env
+
+# Raw corpus — PDFs are copyrighted; .md conversions derived from them
+# Keep raw/_manifest.json (metadata only, no full text)
+raw/*.md
+raw/pdfs/
+
+# Generated vector store (large, reproducible via make ingest)
+rag/chroma_db/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# macOS
+.DS_Store
+
+# Blog drafts (keep private until published)
+content/drafts/
+
+# Incremental state (local only)
+.compile_state.json
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Claude Code local settings
+.claude/settings.local.json

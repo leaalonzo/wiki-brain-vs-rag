@@ -1,0 +1,8 @@
+## Definition
+Coverage rate is a metric used to evaluate the extent to which a software program's code is executed when a set of test cases is applied. It is an important measure in software testing, reflecting the thoroughness and effectiveness of the test cases in exploring different parts of the codebase.
+
+## Context
+In software engineering and testing, coverage rate is crucial for assessing the quality and robustness of test cases. A higher coverage rate indicates that a greater portion of the code is being tested, potentially uncovering more defects and ensuring the software behaves as expected under various conditions. This concept is particularly relevant in studies involving large language models (LLMs) for code, such as CodeX and CodeT5+, which have been shown to improve test case generation and, consequently, coverage rates. The paper "The Program Testing Ability of Large Language Models for Code" highlights the role of LLMs in enhancing code quality by increasing both pass rates and coverage rates on benchmark datasets like HumanEval+. The study demonstrates that improving the quality of generated test cases can enhance the performance of synthesized programs, achieving higher code pass rates compared to existing baselines.
+
+## Related Concepts
+[[Pass Rate]], [[Test Case Generation]], [[Large Language Models]], [[Software Testing]], [[Program Synthesis]], [[Code Quality]], [[Code Intelligence]]
