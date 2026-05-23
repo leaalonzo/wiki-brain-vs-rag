@@ -221,8 +221,6 @@ make run-rag               Interactive RAG Q&A
 make run-wiki-qa           Interactive wiki Q&A
 make run-eval              Eval both systems on eval/questions.md
 make search Q="..."        Keyword search across wiki/
-make generate-posts        Generate 4 Substack draft posts
-make generate-linkedin     Generate 4 LinkedIn draft posts
 ```
 
 ---

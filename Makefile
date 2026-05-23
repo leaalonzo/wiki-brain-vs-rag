@@ -61,20 +61,6 @@ search:
 	@if [ -z "$(Q)" ]; then echo "Usage: make search Q='your query'"; exit 1; fi
 	$(PYTHON) -m tools.search "$(Q)"
 
-generate-posts:
-	$(PYTHON) -m tools.blog_generator
-
-generate-post:
-	@if [ -z "$(N)" ]; then echo "Usage: make generate-post N=4"; exit 1; fi
-	$(PYTHON) -m tools.blog_generator --post $(N)
-
-generate-linkedin:
-	$(PYTHON) -m tools.blog_generator --linkedin
-
-generate-linkedin-post:
-	@if [ -z "$(N)" ]; then echo "Usage: make generate-linkedin-post N=2"; exit 1; fi
-	$(PYTHON) -m tools.blog_generator --linkedin --post $(N)
-
 fetch-papers:
 	$(PYTHON) -m tools.fetch_papers
 
