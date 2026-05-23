@@ -33,7 +33,16 @@
 | Q9 | What is IRCoT and how does it combine retrieval with CoT? | 18 | 17 | +1 | Wiki |
 | Q10 | How does RocketQA improve dense passage retrieval? | 16 | 18 | −2 | RAG |
 
-**Why wiki has higher averages but fewer wins:** RAG's 5 wins were all narrow (−1 to −5 points). Wiki's 3 wins included two large swings: Q7 (+13, RAG had a missing document) and Q2 (+7). Those outliers pulled wiki's category averages up without adding win count. RAG is more consistently good; wiki is higher-variance with bigger upside when its compiled knowledge is on-topic.
+**Question categories:**
+
+| Type | Questions | Winner |
+|---|---|---|
+| Factual recall (single paper, define/explain) | Q1, Q4, Q6, Q7, Q8 | RAG 3 — Wiki 1 — Tie 1 |
+| Synthesis (cross-paper, compare mechanisms) | Q2, Q3, Q5, Q9, Q10 | RAG 2 — Wiki 2 — Tie 1 |
+
+RAG dominated factual recall; wiki was competitive on synthesis. Q7 is the outlier — a factual recall question where RAG's retrieval failed entirely (returned irrelevant documents, scored 4/20).
+
+**Why wiki has higher averages but fewer wins:** RAG's 5 wins were all narrow (−1 to −5 points). Wiki's 3 wins included two large swings: Q7 (+13, RAG retrieval failure) and Q2 (+7). Those outliers pulled wiki's category averages up without adding win count. RAG is more consistently good; wiki is higher-variance with bigger upside when its compiled knowledge is on-topic.
 
 Win/loss: Wiki 3 — RAG 5 — Ties 2 (out of 10 questions)
 
