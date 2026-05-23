@@ -39,7 +39,7 @@ Win/loss: Wiki 3 — RAG 5 — Ties 2 (out of 10 questions)
 
 Cost per 10 queries: Wiki $0.45 — RAG $0.31  
 One-time compilation cost: ~$0.65  
-Full write-up: [Substack series](https://substack.com) *(link to be added after publication)*
+Full write-up: https://open.substack.com/pub/gleanai/p/i-tested-karpathys-llm-wiki-against?r=6bj1kc&utm_campaign=post-expanded-share&utm_medium=web
 
 ---
 
